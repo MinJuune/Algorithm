@@ -1,3 +1,5 @@
+//백준 이항계수2
+
 #include <iostream>
 using namespace std;
 
