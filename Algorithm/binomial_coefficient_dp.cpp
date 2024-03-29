@@ -1,4 +1,4 @@
-//백준 이항계수2
+// 백준 이항계수2
 
 #include <iostream>
 using namespace std;
@@ -26,3 +26,4 @@ int main() {
 
     cout << B[N][K];
 }
+
