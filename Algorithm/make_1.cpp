@@ -9,7 +9,6 @@ int dp[1000001];
 int main() {
     int N;
     cin >> N;
-
     
 
     int temp;
