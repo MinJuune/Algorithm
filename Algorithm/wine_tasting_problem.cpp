@@ -4,7 +4,9 @@
 #include <algorithm>
 using namespace std;
 
-int dp[2][10001];
+int dp[2][10001];   
+// dp[0][]에다가는 현재까지의 최댓값
+// dp[1][]에다가는 현재꺼O + 전꺼X + 전전꺼까지의 최댓값 
 int arr[10001];
 
 int main(){
