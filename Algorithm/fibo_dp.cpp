@@ -1,4 +1,4 @@
-// 피보나치
+// 피보나치_dp
 
 #include <iostream>
 using namespace std;
