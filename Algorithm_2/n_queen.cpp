@@ -9,18 +9,24 @@ bool check(int level) {
 	for (int i = 0; i < level; i++) {
 		if (col[i] == col[level] || abs(col[level] - col[i]) == abs(level - i)) {
 		//대각선이거나 같은 라인
-			return false;
+			return false; //3
 		//col[i]가 의미하는 것이 x좌표, i가 의미하는것이 y좌표이므로  
 		//차이가 일정하다면 대각선에 있다고 볼 수 있다.
 		}
 	}
-	return true;
+	return true; //2
 }
 
 void nqueen(int x) {
 	if (x == N) {
-		total++;
+		//total++;
+
+		//중간 출력
+		for(int i=0;i<N;i++){
+			cout<<col[i]+1<<" ";
+		}cout<<endl;
 	}
+
 	else {
 		for (int i = 0; i < N; i++) {
 			col[x] = i;  //해당 위치에 퀸을 배치
@@ -33,7 +39,11 @@ void nqueen(int x) {
 }
 
 int main() {
-	cin >> N;
+	//cin >> N;
+	N=4;
 	nqueen(0);
-	cout << total;
+	//cout << total << endl;
 }
+
+
+
