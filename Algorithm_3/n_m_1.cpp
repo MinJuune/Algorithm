@@ -11,14 +11,13 @@ void dfs(int cnt){
     if(cnt==M){
         for(int i=0;i<M;i++){
             cout<<arr[i]<<" ";
-        }cout<<"\n";
-        return;
+        }cout<<'\n';
     }
     else{
         for(int i=1;i<=N;i++){
             if(!visited[i]){
-                visited[i]=true;
                 arr[cnt]=i;
+                visited[i]=true;
                 dfs(cnt+1);
                 visited[i]=false;
             }
@@ -29,7 +28,7 @@ void dfs(int cnt){
 int main(){
     cin.tie(NULL);
     cin.sync_with_stdio(false);
-   
+
     cin>>N>>M;
 
     dfs(0);
