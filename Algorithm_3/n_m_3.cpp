@@ -1,4 +1,4 @@
-// 백준 N과M(3)
+// 백준 N과 M(3)
 
 #include <iostream>
 using namespace std;
