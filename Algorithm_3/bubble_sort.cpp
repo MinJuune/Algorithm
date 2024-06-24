@@ -1,4 +1,6 @@
-// 백준 버블 소트 
+// 백준 버블 소트 말고
+// 그냥 버블 소트임
+// 백준 문제는 이렇게 하면 시간초과남
 
 #include <iostream>
 #include <algorithm>
