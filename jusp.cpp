@@ -1,42 +1,41 @@
 #include <iostream>
 using namespace std;
+#include <algorithm>
 
 int main(){
     cin.tie(NULL);
     cin.sync_with_stdio(false);
 
-    int n;
-    cin>>n;
-    n=1000-n;
-
-    int cnt=0;
-
-    if(n>=500){
-        cnt++;
-        n-=500;
+    int arr[9];
+    int sum=0;
+    int target;
+    for(int i=0;i<9;i++){
+        cin>>arr[i];
+        sum+=arr[i];
     }
 
-    int num_100=n/100;
-    cnt+=num_100;
-    n-=100*num_100;
+    target=sum-100;
 
-    if(n>=50){
-        cnt++;
-        n-=50;
+    int fake1, fake2;
+    for(int i=0;i<9;i++){
+        for(int j=0;j<9;j++){
+            if(i!=j){
+                if(arr[i]+arr[j]==target){
+                    fake1=i;
+                    fake2=j;
+                    break;
+                }
+            }
+        }
     }
 
-    int num_10=n/10;
-    cnt+=num_10;
-    n-=10*num_10;
-
-    if(n>=5){
-        cnt++;
-        n-=5;
+    arr[fake1]=0;
+    arr[fake2]=0;
+    sort(arr,arr+9);
+    for(int i=0;i<9;i++){
+        if(arr[i]!=0){
+            cout<<arr[i]<<endl;
+        }
     }
 
-    int num_1=n;
-    cnt+=num_1;
-    n-=num_1;
-
-    cout<<cnt;
 }
