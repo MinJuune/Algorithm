@@ -24,7 +24,7 @@ void solve(int m, int n){
             continue;
         }
         else{   
-            for(int j=i*2;j<=n;j=j+i){
+            for(int j=2*i;j<=n;j=j+i){
                 arr[j]=0;
             }
         }
