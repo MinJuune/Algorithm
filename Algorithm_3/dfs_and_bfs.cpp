@@ -10,7 +10,7 @@ bool vis[1001];
 int N,M;
 int idx=0;
 
-//스택으로 bfs 구현
+//큐로 bfs 구현
 void bfs(int start){
     queue<int> q;
     
