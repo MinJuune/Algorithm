@@ -18,7 +18,6 @@ void bfs(){
     visited[0][0]=true;
     q.push({0,0});
 
-    int cnt=1;
     while(!q.empty()){
         pair<int,int> cur=q.front();
         q.pop();
