@@ -19,6 +19,7 @@ int n=7;
 int m=10;
 int dx[4]={1,0,-1,0};
 int dy[4]={0,1,0,-1};
+// 하 우 상 좌
 
 int main(){
     cin.tie(NULL);
