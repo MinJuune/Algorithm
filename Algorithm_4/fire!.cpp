@@ -7,7 +7,9 @@ using namespace std;
 
 int R,C;
 char arr[1001][1001];
+// 시간에 따른 불 번질수 있는 위치 나타냄
 int distF[1001][1001];
+// 시간에 따른 지훈이의 도망갈수 있는 위치 나타냄
 int distJ[1001][1001];
 
 // 하 우 상 좌
@@ -69,7 +71,7 @@ int main(){
             if(nx<0 || ny<0 || nx>=R || ny>=C){
                 continue;
             } 
-            
+            // 이미 불 번진 곳이면 불 안번짐
             if(distF[nx][ny]>=0){
                 continue;
             }
