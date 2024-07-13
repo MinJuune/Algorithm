@@ -53,7 +53,7 @@ void bfs(){
                 q.push({nx,ny});
                 visited[nx][ny]=true;
                 zero_to_one++;
-                
+
             }
         }
         step++;
